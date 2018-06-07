@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TilesetLibrary")]
-[assembly: AssemblyProduct("TilesetLibrary")]
+[assembly: AssemblyTitle("PizzaJam2")]
+[assembly: AssemblyProduct("PizzaJam2")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]

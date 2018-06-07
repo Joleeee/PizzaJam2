@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TilesetLibrary
+namespace PizzaJam2
 {
 	class Tile
 	{
@@ -33,7 +33,7 @@ namespace TilesetLibrary
 
 		public void Draw(SpriteBatch spriteBatch, Tileset tileset)
 		{
-			spriteBatch
+			//spriteBatch
 		}
 
 		public Point Animate(int time)

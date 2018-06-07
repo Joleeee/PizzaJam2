@@ -9,8 +9,8 @@
     <ProjectGuid>{8812E704-9D62-4051-AEBE-F227C96391F1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TilesetLibrary</RootNamespace>
-    <AssemblyName>TilesetLibrary</AssemblyName>
+    <RootNamespace>PizzaJam2</RootNamespace>
+    <AssemblyName>PizzaJam2</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MonoGamePlatform>Windows</MonoGamePlatform>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TilesetLibrary
+namespace PizzaJam2
 {
 #if WINDOWS || LINUX
     /// <summary>

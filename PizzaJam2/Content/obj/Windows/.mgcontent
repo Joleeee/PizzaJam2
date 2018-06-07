@@ -4,7 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/MonoGame/TilesetLibrary/TilesetLibrary/Content/tileset.png</File>
-    <File>C:/MonoGame/TilesetLibrary/TilesetLibrary/Content/Player.png</File>
+    <File>C:/MonoGame/PizzaJam2/PizzaJam2/Content/tileset.png</File>
+    <File>C:/MonoGame/PizzaJam2/PizzaJam2/Content/Player.png</File>
   </SourceFiles>
 </SourceFileCollection>

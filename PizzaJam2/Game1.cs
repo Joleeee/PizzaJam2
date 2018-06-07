@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using System;
 using System.IO;
 
-namespace TilesetLibrary
+namespace PizzaJam2
 {
 
     public class Game1 : Game

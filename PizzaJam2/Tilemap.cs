@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System.IO;
 using System.Linq;
 
-namespace TilesetLibrary
+namespace PizzaJam2
 {
     class Tilemap : GameObject
     {
@@ -32,17 +32,17 @@ namespace TilesetLibrary
 			}
 		}
 
-		public bool Overlap()
-		{
-			for (int x = 0; x < map.GetLength(0); x++)
-			{
-				for (int y = 0; y < map.GetLength(1); y++)
-				{
-					//Rectangle tileRect = new Rectangle(x * TS.Textures[map[x,y]].Bounds)
-				}
-			}
-		}
-
+		//public bool Overlap()
+		//{
+		//	for (int x = 0; x < map.GetLength(0); x++)
+		//	{
+		//		for (int y = 0; y < map.GetLength(1); y++)
+		//		{
+		//			//Rectangle tileRect = new Rectangle(x * TS.Textures[map[x,y]].Bounds)
+		//		}
+		//	}
+		//}
+		
 		public void Update()
 		{
 			TS.Update();

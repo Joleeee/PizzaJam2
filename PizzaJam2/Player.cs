@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TilesetLibrary
+namespace PizzaJam2
 {
 	class Player : Sprite
 	{
@@ -27,6 +27,8 @@ namespace TilesetLibrary
 			{
 				move.X--;
 			}
+
+			position += move;
 
 			base.Update(animate);
 		}
