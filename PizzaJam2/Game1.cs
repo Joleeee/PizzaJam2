@@ -32,10 +32,10 @@ namespace PizzaJam2
         protected override void Initialize()
         {
 			Texture.Content = Content;
-			Tileset TS = new Tileset();
-			TS.Add(1, Texture.Load<Texture2D>("tileset"), Point.Zero, new Point(8, 8));
-			TS.Add(2, Texture.Load<Texture2D>("tileset"), new Point(8, 0), new Point(8, 8));
-			main = new Tilemap(TS, @"Content\Maps\map.txt");
+			//Tileset TS = new Tileset();
+			//TS.Add(1, Texture.Load<Texture2D>("tileset"), new Rectangle(0, 0, 8, 8));
+			//TS.Add(2, Texture.Load<Texture2D>("tileset"), new Rectangle(0, 8, 8, 8));
+			main = new Tilemap(@"Content\Maps\map.txt");
 			base.Initialize();
         }
 		
@@ -60,6 +60,7 @@ namespace PizzaJam2
 			if (Keyboard.GetState().IsKeyDown(Keys.F))
 				ToggleFullscreen();
 
+			main.Update();
 			player.Update(false, main);
 
 			base.Update(gameTime);

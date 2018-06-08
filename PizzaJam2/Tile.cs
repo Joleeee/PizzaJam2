@@ -8,37 +8,21 @@ using System.Threading.Tasks;
 
 namespace PizzaJam2
 {
-	class Tile
+	class Tile : Sprite
 	{
-		public int id;
-		public Point start;
-		public Point current;
-		public Point size;
-		public bool isAnimated;
-		public int frames;
-		public int frameTime;
-		public int time = 0;
-
-		/// <param name="frameTime">In frames</param>
-		public Tile(int id, Point start, Point size, int frames = 1, int frameTime = 0)
+		public Tile(Vector2 tilePosition, Texture2D texture, Rectangle start, int frames = 1, int frameTime = 1) : base(tilePosition * start.Size.ToVector2(), texture, start, frames, frameTime)
 		{
-			this.id = id;
-			this.start = start;
-			this.current = start;
-			this.size = size;
-			this.frames = frames;
-			this.frameTime = 0;
-			this.isAnimated = (frames != 1 || frameTime != 0);
+			
 		}
 
-		public void Draw(SpriteBatch spriteBatch, Tileset tileset)
+		public override void Draw(SpriteBatch spriteBatch)
 		{
-			//spriteBatch
+			base.Draw(spriteBatch);
 		}
 
-		public Point Animate(int time)
+		public override void Update(bool animate)
 		{
-			return Texture.Animate(start, size.X, time, 2, 5);
+			base.Update(animate);
 		}
 	}
 }

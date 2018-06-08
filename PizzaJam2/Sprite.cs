@@ -28,14 +28,20 @@ namespace PizzaJam2
 			this.frameTime = frameTime;
 		}
 
-		public void Update(bool animate)
+		public virtual void Update(bool animate)
 		{
-			int frame = time % frames;
-			current = new Rectangle(start.X += start.X * frame, start.Y, start.Width, start.Height);
-			time++;
+			//Console.WriteLine("2bad");
+			if (animate)
+			{
+				int frame = time % frameTime;
+				current = new Rectangle(start.X + start.Width * frame, start.Y, start.Width, start.Height);
+				//Console.WriteLine(start.X + )
+				time++;
+				Console.WriteLine(frame);
+			}
 		}
 
-		public void Draw(SpriteBatch spriteBatch)
+		public virtual void Draw(SpriteBatch spriteBatch)
 		{
 			spriteBatch.Draw(texture, position, current, Color.White);
 		}
