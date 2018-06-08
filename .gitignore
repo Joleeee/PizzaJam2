@@ -1,0 +1,11 @@
+# Common files to ignore
+*.swp
+*.zip
+*.suo
+*.user
+GWPlanetGame/bin
+GWPlanetGame/bin
+GWPlanetGame/obj
+GWPlanetGame/obj
+*.cachefile
+*.ccgame

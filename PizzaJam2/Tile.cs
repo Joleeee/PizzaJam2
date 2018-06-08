@@ -20,9 +20,10 @@ namespace PizzaJam2
 			base.Draw(spriteBatch);
 		}
 
-		public override void Update(bool animate)
+		public void Update(bool animate = false)
 		{
-			base.Update(animate);
+			if(animate)
+				base.Animate(animate);
 		}
 	}
 }

@@ -26,7 +26,9 @@ namespace PizzaJam2
 			
             Content.RootDirectory = "Content";
 
-			ToggleFullscreen();
+			//Window.AllowUserResizing = true;
+
+			//ToggleFullscreen();
 		}
 
         protected override void Initialize()

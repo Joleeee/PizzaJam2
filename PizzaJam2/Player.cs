@@ -30,7 +30,7 @@ namespace PizzaJam2
 
 			position += move;
 
-			base.Update(animate);
+			base.Animate(animate);
 		}
 	}
 }
