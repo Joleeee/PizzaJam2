@@ -54,3 +54,7 @@ C:\Users\Jonas\Documents\PizzaJam2\PizzaJam2\obj\x86\Debug\PizzaJam2.exe
 C:\Users\Jonas\Documents\PizzaJam2\PizzaJam2\obj\x86\Debug\PizzaJam2.pdb
 C:\Users\Jonas\Documents\PizzaJam2\PizzaJam2\bin\Windows\x86\Debug\Content\Tiles\dirt_overlay.xnb
 C:\Users\Jonas\Documents\PizzaJam2\PizzaJam2\bin\Windows\x86\Debug\Content\Tiles\dirt_tile.xnb
+C:\Users\Falk\Documents\GitHub\PizzaJam2\PizzaJam2\obj\x86\Debug\PizzaJam2.csprojResolveAssemblyReference.cache
+C:\Users\Falk\Documents\GitHub\PizzaJam2\PizzaJam2\obj\x86\Debug\PizzaJam2.csproj.CoreCompileInputs.cache
+C:\Users\Falk\Documents\GitHub\PizzaJam2\PizzaJam2\obj\x86\Debug\PizzaJam2.exe
+C:\Users\Falk\Documents\GitHub\PizzaJam2\PizzaJam2\obj\x86\Debug\PizzaJam2.pdb

@@ -11,9 +11,9 @@ namespace PizzaJam2
 {
 	class Player : Sprite
 	{
-		public Player(Vector2 startPosition) : base(startPosition, Texture.Load<Texture2D>("player"), new Rectangle(0, 0, 16, 32))
+		public Player(Vector2 startPosition) : base(startPosition, Texture.Load<Texture2D>("Sprites/Old"), new Rectangle(0, 0, 28, 32))
 		{
-			
+            start = new Rectangle(0, 0, 7, 8);
 		}
 
 		public void Update(bool animate, Tilemap tm)

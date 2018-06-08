@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Jonas/Documents/PizzaJam2/PizzaJam2/Content/tileset.png</SourceFile>
-  <SourceTime>2018-06-08T14:11:41.6592711+02:00</SourceTime>
-  <DestFile>C:/Users/Jonas/Documents/PizzaJam2/PizzaJam2/Content/bin/Windows/tileset.xnb</DestFile>
-  <DestTime>2018-06-08T14:13:49.0580728+02:00</DestTime>
+  <SourceFile>C:/Users/Falk/Documents/GitHub/PizzaJam2/PizzaJam2/Content/tileset.png</SourceFile>
+  <SourceTime>2018-06-08T19:18:25.2046541+02:00</SourceTime>
+  <DestFile>C:/Users/Falk/Documents/GitHub/PizzaJam2/PizzaJam2/Content/bin/Windows/tileset.xnb</DestFile>
+  <DestTime>2018-06-08T21:31:42.5665177+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
