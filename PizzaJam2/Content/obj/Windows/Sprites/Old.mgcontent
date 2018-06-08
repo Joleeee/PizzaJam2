@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/Falk/Documents/GitHub/PizzaJam2/PizzaJam2/Content/Sprites/Old.png</SourceFile>
-  <SourceTime>2018-06-08T20:58:55.1134286+02:00</SourceTime>
+  <SourceTime>2018-06-08T22:06:19.1125979+02:00</SourceTime>
   <DestFile>C:/Users/Falk/Documents/GitHub/PizzaJam2/PizzaJam2/Content/bin/Windows/Sprites/Old.xnb</DestFile>
-  <DestTime>2018-06-08T21:31:42.8041183+02:00</DestTime>
+  <DestTime>2018-06-08T22:07:05.9670261+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
