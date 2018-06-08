@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 using System.IO;
 using System.Linq;
 
@@ -44,6 +45,7 @@ namespace PizzaJam2
 					}
 				}
 			}
+			UpdateAutoTiles();
 		}
 		
 		public void Update()
@@ -76,14 +78,23 @@ namespace PizzaJam2
 
 		void UpdateAutoTiles()
 		{
-			for (int x = 0; x < aMap.GetLength(0); x++)
+			int width = aMap.GetLength(0);
+			int height = aMap.GetLength(1);
+			for (int x = 0; x < width; x++)
 			{
-				for (int y = 0; y < aMap.GetLength(1); y++)
+				for (int y = 0; y < height; y++)
 				{
-					bool up = aMap[x, y - 1] != null;
-					bool down = aMap[x, y + 1 != null;
-					if (map[x, y] != null)
-						map[x, y].Draw(spriteBatch);
+					Side[] sides = new Side[(int)Enum.GetValues(typeof(Side)).Cast<Side>().Last()];
+					if (x > 0) if (aMap[x - 1, y] != null) sides[(int)Side.Left] = Side.Left;
+					if (x < width) if (aMap[x + 1, y] != null) sides[(int)Side.Right] = Side.Right;
+					if (y > 0) if (aMap[x, y - 1] != null) sides[(int)Side.Up] = Side.Up;
+					if (y < height) if (aMap[x, y + 1] != null) sides[(int)Side.Down] = Side.Down;
+					if (x > 0 && y > 0) if (aMap[x - 1, y - 1] != null) sides[(int)Side.TopLeftCorner] = Side.TopLeftCorner;
+					if (x > 0 && y < width) if (aMap[x - 1, y + 1] != null) sides[(int)Side.BottomLeftCorer] = Side.BottomLeftCorer;
+					if (x < width && y > 0) if (aMap[x + 1, y - 1] != null) sides[(int)Side.TopRightCorner] = Side.TopRightCorner;
+					if (x < width && y < width) if (aMap[x + 1, y + 1] != null) sides[(int)Side.BottomRightCorner] = Side.BottomRightCorner;
+					aMap[x, y].UpdateTile(sides);
+
 				}
 			}
 		}
