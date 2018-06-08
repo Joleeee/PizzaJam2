@@ -4,8 +4,6 @@
 *.suo
 *.user
 PizzaJam2/bin
-PizzaJam2/bin
-PizzaJam2/obj
 PizzaJam2/obj
 *.cachefile
 *.ccgame
