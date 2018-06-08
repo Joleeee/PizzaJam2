@@ -13,7 +13,7 @@ namespace PizzaJam2
         SpriteBatch spriteBatch;
 		RenderTarget2D RenderTarget;
 
-		Point pixelRes = new Point(384, 216);
+		Point pixelRes = new Point(384/4, 216/4);
 		Player player;
 
 		Tilemap main;
@@ -21,8 +21,8 @@ namespace PizzaJam2
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
-			graphics.PreferredBackBufferWidth = pixelRes.X * 3;
-			graphics.PreferredBackBufferHeight = pixelRes.Y * 3;
+			graphics.PreferredBackBufferWidth = pixelRes.X * 12;
+			graphics.PreferredBackBufferHeight = pixelRes.Y * 12;
 			
             Content.RootDirectory = "Content";
 

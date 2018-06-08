@@ -78,7 +78,7 @@ namespace PizzaJam2
 
 		void UpdateAutoTiles()
 		{
-			int width = aMap.GetLength(0);
+			/*int width = aMap.GetLength(0);
 			int height = aMap.GetLength(1);
 			for (int x = 0; x < width; x++)
 			{
@@ -96,7 +96,7 @@ namespace PizzaJam2
 					aMap[x, y].UpdateTile(sides);
 
 				}
-			}
+			}*/
 		}
 	}
 }
