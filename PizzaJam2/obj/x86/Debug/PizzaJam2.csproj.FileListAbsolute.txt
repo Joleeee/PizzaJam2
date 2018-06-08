@@ -84,4 +84,8 @@ C:\Users\Falk\Documents\GitHub\PizzaJam2\PizzaJam2\bin\Windows\x86\Debug\SharpDX
 C:\Users\Falk\Documents\GitHub\PizzaJam2\PizzaJam2\bin\Windows\x86\Debug\SharpDX.XInput.xml
 C:\Users\Falk\Documents\GitHub\PizzaJam2\PizzaJam2\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\Falk\Documents\GitHub\PizzaJam2\PizzaJam2\obj\x86\Debug\PizzaJam2.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\Falk\Documents\GitHub\PizzaJam2\PizzaJam2\bin\Windows\x86\Debug\Content\Sprites\Old.xnb
+=======
+C:\Users\Jonas\Documents\PizzaJam2\PizzaJam2\bin\Windows\x86\Debug\Content\Sprites\Old.xnb
+>>>>>>> bd1f108b9adc1af3a4dab91f13bc952f93e6100f
