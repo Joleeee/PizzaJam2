@@ -13,7 +13,7 @@ namespace PizzaJam2
 	{
 		Point size;
 		Texture2D overlayTexture;
-		int[] overlays;
+		int[] overlays = new int[(int)Enum.GetValues(typeof(Side)).Cast<Side>().Last()];
 		
 		public AutoTile(Vector2 tilePosition, Texture2D texture, Texture2D overlayTexture, Rectangle start, int frames = 1, int frameTime = 1) : base(tilePosition * start.Size.ToVector2(), texture, start, frames, frameTime)
 		{
