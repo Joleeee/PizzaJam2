@@ -73,7 +73,7 @@ namespace PizzaJam2
 			GraphicsDevice.SetRenderTarget(RenderTarget);
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 			//do draw here
-			spriteBatch.Begin();
+			spriteBatch.Begin(samplerState: SamplerState.PointClamp);
 			main.Draw(spriteBatch);
 			player.Draw(spriteBatch);
 			spriteBatch.End();
