@@ -13,6 +13,7 @@ namespace PizzaJam2
 	{
 		public Player(Vector2 startPosition) : base(startPosition, Texture.Load<Texture2D>("Sprites/Old"), new Rectangle(0, 8, 7, 8), 4, 7)
 		{
+
 		}
 
 		public void Update(bool animate, Tilemap tm)
