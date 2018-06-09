@@ -13,6 +13,8 @@ namespace PizzaJam2
         SpriteBatch spriteBatch;
 		RenderTarget2D RenderTarget;
 
+		int scale = 1; //dont change!
+
 		Point pixelRes = new Point(384/4, 216/4);
 		Player player;
 
@@ -26,12 +28,12 @@ namespace PizzaJam2
 			
             Content.RootDirectory = "Content";
 
-			//Window.AllowUserResizing = true;
+			Window.AllowUserResizing = true;
 
 			//ToggleFullscreen();
 		}
 
-        protected override void Initialize()
+		protected override void Initialize()
         {
 			Texture.Content = Content;
 			//Tileset TS = new Tileset();
@@ -70,10 +72,13 @@ namespace PizzaJam2
 
 		protected override bool BeginDraw()
 		{
+			scale = Math.Min(graphics.PreferredBackBufferWidth / pixelRes.X, graphics.PreferredBackBufferHeight / pixelRes.Y);
+			RenderTarget = new RenderTarget2D(RenderTarget.GraphicsDevice, pixelRes.X * scale, pixelRes.Y * scale);
+			
 			GraphicsDevice.SetRenderTarget(RenderTarget);
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 			//do draw here
-			spriteBatch.Begin(samplerState: SamplerState.PointClamp);
+			spriteBatch.Begin(samplerState: SamplerState.PointClamp, transformMatrix: Matrix.CreateScale(scale));
 			main.Draw(spriteBatch);
 			player.Draw(spriteBatch);
 			spriteBatch.End();
@@ -84,12 +89,11 @@ namespace PizzaJam2
         {
 			//dont draw here
 			GraphicsDevice.SetRenderTarget(null);
-            GraphicsDevice.Clear(Color.Black);
+            GraphicsDevice.Clear(Color.Green);
 			spriteBatch.Begin(samplerState: SamplerState.PointClamp/*, transformMatrix: Matrix.CreateScale(scale)*/);
-			int scale = Math.Min(graphics.PreferredBackBufferWidth / pixelRes.X, graphics.PreferredBackBufferHeight / pixelRes.Y);
 			int x = (graphics.PreferredBackBufferWidth - scale * pixelRes.X) / 2;
 			int y = (graphics.PreferredBackBufferHeight - scale * pixelRes.Y) / 2;
-			Rectangle drawRect = new Rectangle(x, y, scale * pixelRes.X, scale * pixelRes.Y);
+			Rectangle drawRect = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
 			spriteBatch.Draw(RenderTarget, drawRect, Color.White);
 			spriteBatch.End();
             base.Draw(gameTime);
