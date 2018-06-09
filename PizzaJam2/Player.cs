@@ -12,6 +12,8 @@ namespace PizzaJam2
 	class Player : Sprite
 	{
         Vector2 velocity;
+        bool canJump = true;
+
         Vector2 lastPosition;
 		public Player(Vector2 startPosition) : base(startPosition, Texture.Load<Texture2D>("Sprites/Old"), new Rectangle(0, 8, 7, 8), 4, 7)
 		{
@@ -43,9 +45,10 @@ namespace PizzaJam2
 
 			position += move;
 
-            if (Input.IsDown(Keys.Up))
+            if (Input.IsDown(Keys.Up) && canJump)
             {
                 velocity.Y = -1;
+                canJump = false;
             }
 
             for(int i = 0; i < tm.map.GetLength(1); i++)
@@ -66,6 +69,7 @@ namespace PizzaJam2
                             {
                                 position.Y = tm.map[x, i].position.Y - current.Height;
                                 velocity.Y = 0;
+                                canJump = true;
                             }
                         }
                     }
