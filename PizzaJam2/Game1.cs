@@ -47,7 +47,7 @@ namespace PizzaJam2
         {
 			RenderTarget = new RenderTarget2D(GraphicsDevice, pixelRes.X, pixelRes.Y);
             spriteBatch = new SpriteBatch(GraphicsDevice);
-			player = new Player(new Vector2(20, 20));
+			player = new Player(new Vector2(50, 20));
         }
 		
         protected override void UnloadContent()
@@ -68,7 +68,7 @@ namespace PizzaJam2
 			player.Update(false, main);
 
 			base.Update(gameTime);
-        }
+        } 
 
 		protected override bool BeginDraw()
 		{
