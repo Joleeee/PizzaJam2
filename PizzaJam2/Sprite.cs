@@ -43,5 +43,13 @@ namespace PizzaJam2
 		{
 			spriteBatch.Draw(texture, position, current, Color.White);
 		}
+
+		public static bool Overlap(Sprite a, Sprite b)
+		{
+			int scale = 2;
+			Rectangle ar = new Rectangle((a.position * scale).ToPoint(), a.current.Size);
+			Rectangle ab = new Rectangle((b.position * scale).ToPoint(), b.current.Size);
+			return ar.Intersects(ab);
+		}
 	}
 }
