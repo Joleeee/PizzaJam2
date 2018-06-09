@@ -8,7 +8,7 @@ namespace PizzaJam2
 {
     class Tilemap : GameObject
     {
-		Tile[,] map;
+		public Tile[,] map;
 		AutoTile[,] aMap;
 		string[,] textMap;
 
